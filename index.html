@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Крестики-Нолики</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Крестики-Нолики</h1>
+<h2 id="lbl">Ходят крестики</h2>
+<table>
+    <tbody>
+    <tr>
+        <td>
+            <button class="game-button" id="11" onclick="act('11')"> </button>
+        </td>
+        <td>
+            <button class="game-button" id="12" onclick="act('12')"> </button>
+        </td>
+        <td>
+            <button class="game-button" id="13" onclick="act('13')"> </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="game-button" id="21" onclick="act('21')"> </button>
+        </td>
+        <td>
+            <button class="game-button" id="22" onclick="act('22')"> </button>
+        </td>
+        <td>
+            <button class="game-button" id="23" onclick="act('23')"> </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="game-button" id="31" onclick="act('31')"> </button>
+        </td>
+        <td>
+            <button class="game-button" id="32" onclick="act('32')"> </button>
+        </td>
+        <td>
+            <button class="game-button" id="33" onclick="act('33')"> </button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<h2>by <a href="https://www.instagram.com/eg0000r/">eg0000r</a></h2>
+<button class="reset-button" onclick="reset()">Начать заново</button>
+<script>
+    var count = 0;
+    function act(id) {
+        var btn = document.getElementById(id);
+        if (count % 2 === 0) {
+            btn.firstChild.data = 'X';
+        } else {
+            btn.firstChild.data = 'O';
+        }
+        count += 1;
+        var lbl = document.getElementById('lbl');
+        if (count % 2 === 0) {
+            lbl.firstChild.data = 'Ходят крестики';
+        } else {
+            lbl.firstChild.data = 'Ходят нолики';
+        }
+    }
+    function reset() {
+        count = 0;
+        document.getElementById('lbl').firstChild.data = 'Ходят крестики';
+        document.getElementById('11').firstChild.data = ' ';
+        document.getElementById('12').firstChild.data = ' ';
+        document.getElementById('13').firstChild.data = ' ';
+        document.getElementById('21').firstChild.data = ' ';
+        document.getElementById('22').firstChild.data = ' ';
+        document.getElementById('23').firstChild.data = ' ';
+        document.getElementById('31').firstChild.data = ' ';
+        document.getElementById('32').firstChild.data = ' ';
+        document.getElementById('33').firstChild.data = ' ';
+    }
+</script>
+</body>
+</html>

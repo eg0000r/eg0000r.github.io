@@ -1,0 +1,48 @@
+body {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: "Comic Sans MS", sans-serif;
+    color: black;
+}
+
+h2 {
+    font-family: "Comic Sans MS", sans-serif;
+    color: black;
+}
+
+.game-button {
+    width: 50px;
+    height: 50px;
+    border-width: 5px;
+    border-color: black;
+    background-color: transparent;
+    border-radius: 50%;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    outline: none;
+}
+
+.reset-button {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border-width: 5px;
+    border-color: black;
+    outline: none;
+    background-color: tomato;
+}
+
+a {
+    color: black;
+}
