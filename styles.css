@@ -33,6 +33,19 @@ h2 {
     outline: none;
 }
 
+.game-button-highlight {
+    width: 50px;
+    height: 50px;
+    border-width: 5px;
+    border-color: black;
+    background-color: azure;
+    border-radius: 50%;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    outline: none;
+}
+
 .reset-button {
     font-family: "Comic Sans MS", sans-serif;
     font-size: large;

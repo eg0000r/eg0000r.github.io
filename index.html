@@ -47,22 +47,154 @@
 </table>
 <h2>by <a href="https://www.instagram.com/eg0000r/">eg0000r</a></h2>
 <button class="reset-button" onclick="reset()">Начать заново</button>
+<h2 id="score">Счет: 0-0</h2>
+<h2 id="turn">Игрок 1 играет за крестики</h2>
 <script>
+    var score1 = 0;
+    var score2 = 0;
+    var games = 0;
     var count = 0;
     function act(id) {
         var btn = document.getElementById(id);
-        if (count % 2 === 0) {
-            btn.firstChild.data = 'X';
-        } else {
-            btn.firstChild.data = 'O';
+        if (btn.firstChild.data !== 'X' && btn.firstChild.data !== 'O') {
+            if (count % 2 === 0) {
+                btn.firstChild.data = 'X';
+            } else {
+                btn.firstChild.data = 'O';
+            }
+            count += 1;
+            var lbl = document.getElementById('lbl');
+            if (count % 2 === 0) {
+                lbl.firstChild.data = 'Ходят крестики';
+            } else {
+                lbl.firstChild.data = 'Ходят нолики';
+            }
+            if (checkWinX()) {
+                lbl.firstChild.data = 'Крестики победили';
+                if (games % 2 === 0) {
+                    score1 += 1;
+                } else {
+                    score2 += 1;
+                }
+                updateScore();
+            }
+            if (checkWinO()) {
+                lbl.firstChild.data = 'Нолики победили';
+                if (games % 2 !== 0) {
+                    score1 += 1;
+                } else {
+                    score2 += 1;
+                }
+                updateScore();
+            }
         }
-        count += 1;
-        var lbl = document.getElementById('lbl');
-        if (count % 2 === 0) {
-            lbl.firstChild.data = 'Ходят крестики';
-        } else {
-            lbl.firstChild.data = 'Ходят нолики';
+    }
+    function updateScore() {
+        document.getElementById('score').firstChild.data = 'Счет: ' + score1.toString() + '-' + score2.toString();
+    }
+    function checkWinX() {
+        var win = false;
+        if (document.getElementById('11').firstChild.data === 'X' && document.getElementById('12').firstChild.data === 'X' && document.getElementById('13').firstChild.data === 'X') {
+            win = true;
+            document.getElementById('11').disabled = true;
+            document.getElementById('12').disabled = true;
+            document.getElementById('13').disabled = true;
         }
+        if (document.getElementById('21').firstChild.data === 'X' && document.getElementById('22').firstChild.data === 'X' && document.getElementById('23').firstChild.data === 'X') {
+            win = true;
+            document.getElementById('21').disabled = true;
+            document.getElementById('22').disabled = true;
+            document.getElementById('23').disabled = true;
+        }
+        if (document.getElementById('31').firstChild.data === 'X' && document.getElementById('32').firstChild.data === 'X' && document.getElementById('33').firstChild.data === 'X') {
+            win = true;
+            document.getElementById('31').disabled = true;
+            document.getElementById('32').disabled = true;
+            document.getElementById('33').disabled = true;
+        }
+        if (document.getElementById('11').firstChild.data === 'X' && document.getElementById('21').firstChild.data === 'X' && document.getElementById('31').firstChild.data === 'X') {
+            win = true;
+            document.getElementById('11').disabled = true;
+            document.getElementById('21').disabled = true;
+            document.getElementById('31').disabled = true;
+        }
+        if (document.getElementById('12').firstChild.data === 'X' && document.getElementById('22').firstChild.data === 'X' && document.getElementById('32').firstChild.data === 'X') {
+            win = true;
+            document.getElementById('12').disabled = true;
+            document.getElementById('22').disabled = true;
+            document.getElementById('32').disabled = true;
+        }
+        if (document.getElementById('13').firstChild.data === 'X' && document.getElementById('23').firstChild.data === 'X' && document.getElementById('33').firstChild.data === 'X') {
+            win = true;
+            document.getElementById('13').disabled = true;
+            document.getElementById('23').disabled = true;
+            document.getElementById('33').disabled = true;
+        }
+        if (document.getElementById('11').firstChild.data === 'X' && document.getElementById('22').firstChild.data === 'X' && document.getElementById('33').firstChild.data === 'X') {
+            win = true;
+            document.getElementById('11').disabled = true;
+            document.getElementById('22').disabled = true;
+            document.getElementById('33').disabled = true;
+        }
+        if (document.getElementById('13').firstChild.data === 'X' && document.getElementById('22').firstChild.data === 'X' && document.getElementById('31').firstChild.data === 'X') {
+            win = true;
+            document.getElementById('13').disabled = true;
+            document.getElementById('22').disabled = true;
+            document.getElementById('31').disabled = true;
+        }
+        return win;
+    }
+    function checkWinO() {
+        var win = false;
+        if (document.getElementById('11').firstChild.data === 'O' && document.getElementById('12').firstChild.data === 'O' && document.getElementById('13').firstChild.data === 'O') {
+            win = true;
+            document.getElementById('11').disabled = true;
+            document.getElementById('12').disabled = true;
+            document.getElementById('13').disabled = true;
+        }
+        if (document.getElementById('21').firstChild.data === 'O' && document.getElementById('22').firstChild.data === 'O' && document.getElementById('23').firstChild.data === 'O') {
+            win = true;
+            document.getElementById('21').disabled = true;
+            document.getElementById('22').disabled = true;
+            document.getElementById('23').disabled = true;
+        }
+        if (document.getElementById('31').firstChild.data === 'O' && document.getElementById('32').firstChild.data === 'O' && document.getElementById('33').firstChild.data === '0') {
+            win = true;
+            document.getElementById('31').disabled = true;
+            document.getElementById('32').disabled = true;
+            document.getElementById('33').disabled = true;
+        }
+        if (document.getElementById('11').firstChild.data === 'O' && document.getElementById('21').firstChild.data === 'O' && document.getElementById('31').firstChild.data === 'O') {
+            win = true;
+            document.getElementById('11').disabled = true;
+            document.getElementById('21').disabled = true;
+            document.getElementById('31').disabled = true;
+        }
+        if (document.getElementById('12').firstChild.data === 'O' && document.getElementById('22').firstChild.data === 'O' && document.getElementById('32').firstChild.data === 'O') {
+            win = true;
+            document.getElementById('12').disabled = true;
+            document.getElementById('22').disabled = true;
+            document.getElementById('32').disabled = true;
+        }
+        if (document.getElementById('13').firstChild.data === 'O' && document.getElementById('23').firstChild.data === 'O' && document.getElementById('33').firstChild.data === 'O') {
+            win = true;
+            document.getElementById('13').disabled = true;
+            document.getElementById('23').disabled = true;
+            document.getElementById('33').disabled = true;
+        }
+        if (document.getElementById('11').firstChild.data === 'O' && document.getElementById('22').firstChild.data === 'O' && document.getElementById('33').firstChild.data === 'O') {
+            win = true;
+            document.getElementById('11').disabled = true;
+            document.getElementById('22').disabled = true;
+            document.getElementById('33').disabled = true;
+        }
+        if (document.getElementById('13').firstChild.data === 'O' && document.getElementById('22').firstChild.data === 'O' && document.getElementById('31').firstChild.data === 'O') {
+            win = true;
+            document.getElementById('13').disabled = true;
+            document.getElementById('22').disabled = true;
+            document.getElementById('31').disabled = true;
+        }
+        return win;
     }
     function reset() {
         count = 0;
@@ -76,6 +208,21 @@
         document.getElementById('31').firstChild.data = ' ';
         document.getElementById('32').firstChild.data = ' ';
         document.getElementById('33').firstChild.data = ' ';
+        document.getElementById('11').disabled = false;
+        document.getElementById('12').disabled = false;
+        document.getElementById('13').disabled = false;
+        document.getElementById('21').disabled = false;
+        document.getElementById('22').disabled = false;
+        document.getElementById('23').disabled = false;
+        document.getElementById('31').disabled = false;
+        document.getElementById('32').disabled = false;
+        document.getElementById('33').disabled = false;
+        games += 1;
+        if (games % 2 !== 0) {
+            document.getElementById('turn').firstChild.data = 'Игрок 2 играет за крестики';
+        } else {
+            document.getElementById('turn').firstChild.data = 'Игрок 1 играет за крестики';
+        }
     }
 </script>
 </body>
