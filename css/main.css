@@ -1,0 +1,43 @@
+@font-face {
+    font-family: comicSans;
+    src: url("../ttf/Comic Sans MS.ttf");
+}
+
+@font-face {
+    font-family: comicSansBold;
+    src: url("../ttf/Comic Sans MS Bold.ttf");
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: comicSansBold, sans-serif;
+}
+
+.menu-button {
+    background-color: lightskyblue;
+    font-family: comicSans, sans-serif;
+    font-size: x-large;
+    height: 50px;
+    width: 20vw;
+    border: none;
+    outline: none;
+}
+
+div {
+    background-color: aliceblue;
+}
+
+a {
+    color: black;
+}

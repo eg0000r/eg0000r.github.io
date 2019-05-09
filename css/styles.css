@@ -1,11 +1,11 @@
 @font-face {
     font-family: comicSans;
-    src: url("Comic Sans MS.ttf");
+    src: url("../ttf/Comic Sans MS.ttf");
 }
 
 @font-face {
     font-family: comicSansBold;
-    src: url("Comic Sans MS Bold.ttf");
+    src: url("../ttf/Comic Sans MS Bold.ttf");
 }
 
 body {
