@@ -1,3 +1,13 @@
+@font-face {
+    font-family: comicSans;
+    src: url("Comic Sans MS.ttf");
+}
+
+@font-face {
+    font-family: comicSansBold;
+    src: url("Comic Sans MS Bold.ttf");
+}
+
 body {
     align-items: center;
     justify-content: center;
@@ -11,12 +21,12 @@ table {
 }
 
 h1 {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: comicSansBold, sans-serif;
     color: black;
 }
 
 h2 {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: comicSans, sans-serif;
     color: black;
 }
 
@@ -27,27 +37,13 @@ h2 {
     border-color: black;
     background-color: transparent;
     border-radius: 50%;
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: comicSansBold, sans-serif;
     font-size: large;
-    font-weight: bold;
-    outline: none;
-}
-
-.game-button-highlight {
-    width: 50px;
-    height: 50px;
-    border-width: 5px;
-    border-color: black;
-    background-color: azure;
-    border-radius: 50%;
-    font-family: "Comic Sans MS", sans-serif;
-    font-size: large;
-    font-weight: bold;
     outline: none;
 }
 
 .reset-button {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: comicSans, sans-serif;
     font-size: large;
     font-weight: bold;
     border-width: 5px;
