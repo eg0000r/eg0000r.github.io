@@ -115,6 +115,16 @@ h3 {
     cursor: pointer;
 }
 
+.appicnmob-small {
+    width: 5vw;
+    height: 5vw;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.2vw;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
 .appicn {
     width: 10vw;
     height: 10vw;
@@ -122,6 +132,25 @@ h3 {
     border-color: black;
     border-width: 0.2vw;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.appicn-small {
+    width: 5vw;
+    height: 5vw;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.2vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.appicn-borderless-small {
+    width: 5vw;
+    height: 5vw;
+    border-style: none;
+    border-color: transparent;
+    border-width: 0;
     cursor: pointer;
 }
 
