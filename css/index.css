@@ -44,6 +44,10 @@ h1 {
     font-family: bullpenIt, sans-serif;
 }
 
+.menu-button:hover {
+    opacity: 0.6;
+}
+
 .menu-button {
     cursor: pointer;
     background-color: transparent;
@@ -55,6 +59,11 @@ h1 {
     border-width: thin;
     border-style: dotted;
     outline: none;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
 }
 
 .menu-button-selected {
@@ -70,9 +79,18 @@ h1 {
     outline: none;
 }
 
+a:hover {
+    opacity: 0.6;
+}
+
 a {
     color: black;
+    opacity: 1;
     text-decoration: none;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
 }
 
 .menu-table {
@@ -115,6 +133,10 @@ h3 {
     cursor: pointer;
 }
 
+.appicnmob-small:hover {
+    opacity: 0.6;
+}
+
 .appicnmob-small {
     width: 5vw;
     height: 5vw;
@@ -123,6 +145,11 @@ h3 {
     border-width: 0.2vw;
     border-radius: 20%;
     cursor: pointer;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
 }
 
 .appicn {
@@ -135,6 +162,10 @@ h3 {
     cursor: pointer;
 }
 
+.appicn-small:hover {
+    opacity: 0.6;
+}
+
 .appicn-small {
     width: 5vw;
     height: 5vw;
@@ -142,7 +173,16 @@ h3 {
     border-color: black;
     border-width: 0.2vw;
     border-radius: 50%;
+    opacity: 1;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
+
+.appicn-borderless-small:hover {
+    opacity: 0.6;
 }
 
 .appicn-borderless-small {
@@ -151,7 +191,12 @@ h3 {
     border-style: none;
     border-color: transparent;
     border-width: 0;
+    opacity: 1;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
 }
 
 .instaprof {
