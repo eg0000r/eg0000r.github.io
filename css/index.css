@@ -118,4 +118,6 @@ h3 {
     width: 10vw;
     height: 10vw;
     border-style: none;
+    border-color: transparent;
+    border-width: 0;
 }
