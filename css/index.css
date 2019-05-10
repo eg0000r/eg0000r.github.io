@@ -48,7 +48,7 @@ h1 {
     cursor: pointer;
     background-color: transparent;
     font-family: bullpen3d, sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
     height: 3vw;
     width: 20vw;
     border-color: black;
@@ -61,7 +61,7 @@ h1 {
     cursor: pointer;
     background-color: gainsboro;
     font-family: bullpen3d, sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
     height: 3vw;
     width: 20vw;
     border-color: black;
@@ -110,7 +110,7 @@ h3 {
     height: 10vw;
     border-style: solid;
     border-color: black;
-    border-width: 0.25vw;
+    border-width: 0.2vw;
     border-radius: 20%;
     cursor: pointer;
 }
@@ -120,7 +120,7 @@ h3 {
     height: 10vw;
     border-style: solid;
     border-color: black;
-    border-width: 0.25vw;
+    border-width: 0.2vw;
     border-radius: 50%;
     cursor: pointer;
 }
