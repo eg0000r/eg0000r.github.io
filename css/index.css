@@ -23,11 +23,16 @@
     src: url("../ttf/bullpen hv it.ttf");
 }
 
+@font-face {
+    font-family: consolasIt;
+    src: url("../ttf/Consolas Italic.ttf");
+}
+
 body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: azure;
+    background-color: white;
 }
 
 table {
@@ -60,6 +65,7 @@ a {
 .menu-table {
     border-style: dotted;
     border-color: black;
+    border-width: 0.2vw;
 }
 
 h2 {
@@ -67,8 +73,16 @@ h2 {
 }
 
 .media-content {
-    background-color: turquoise;
+    background-color: transparent;
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
+}
+
+h3 {
+    text-align: left;
+}
+
+.news-text {
+    font-family: consolasIt, sans-serif;
 }
