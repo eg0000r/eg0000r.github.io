@@ -110,7 +110,7 @@ h3 {
     height: 10vw;
     border-style: solid;
     border-color: black;
-    border-width: medium;
+    border-width: 0.25vw;
     border-radius: 20%;
 }
 
