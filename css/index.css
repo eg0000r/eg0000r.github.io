@@ -112,14 +112,17 @@ h3 {
     border-color: black;
     border-width: 0.25vw;
     border-radius: 20%;
+    cursor: pointer;
 }
 
 .appicn {
     width: 10vw;
     height: 10vw;
-    border-style: none;
-    border-color: transparent;
-    border-width: 0;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.25vw;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .instaprof {
@@ -128,4 +131,14 @@ h3 {
     height: 10vw;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.datatable {
+    border-width: thin;
+    border-color: black;
+    border-style: dotted;
+}
+
+.decrypt-screen {
+    width: 40vw;
 }
