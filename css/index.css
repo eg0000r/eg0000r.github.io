@@ -95,3 +95,11 @@ h3 {
 .news-text {
     font-family: consolasIt, sans-serif;
 }
+
+.appicn {
+    width: 10vw;
+    height: 10vw;
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+}
