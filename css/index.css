@@ -1,14 +1,4 @@
 @font-face {
-    font-family: comicSans;
-    src: url("../ttf/Comic Sans MS.ttf");
-}
-
-@font-face {
-    font-family: comicSansBold;
-    src: url("../ttf/Comic Sans MS Bold.ttf");
-}
-
-@font-face {
     font-family: bullpen3d;
     src: url("../ttf/bullpen 3d.ttf");
 }
@@ -26,6 +16,11 @@
 @font-face {
     font-family: consolasIt;
     src: url("../ttf/Consolas Italic.ttf");
+}
+
+@font-face {
+    font-family: consolasBld;
+    src: url("../ttf/Consolas Bold.ttf");
 }
 
 body {
@@ -47,6 +42,19 @@ h1 {
 .menu-button {
     cursor: pointer;
     background-color: transparent;
+    font-family: bullpen3d, sans-serif;
+    font-size: 1.5vw;
+    height: 3vw;
+    width: 20vw;
+    border-color: black;
+    border-width: thin;
+    border-style: dotted;
+    outline: none;
+}
+
+.menu-button-selected {
+    cursor: pointer;
+    background-color: gainsboro;
     font-family: bullpen3d, sans-serif;
     font-size: 1.5vw;
     height: 3vw;
@@ -81,6 +89,7 @@ h2 {
 
 h3 {
     text-align: left;
+    font-family: consolasBld, sans-serif;
 }
 
 .news-text {
