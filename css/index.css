@@ -23,6 +23,11 @@
     src: url("../ttf/Consolas Bold.ttf");
 }
 
+@font-face {
+    font-family: consolasBldIt;
+    src: url("../ttf/Consolas Bold Italic.ttf");
+}
+
 body {
     align-items: center;
     justify-content: center;
@@ -96,10 +101,21 @@ h3 {
     font-family: consolasIt, sans-serif;
 }
 
-.appicn {
+.news-text-bold {
+    font-family: consolasBldIt, sans-serif;
+}
+
+.appicnmob {
     width: 10vw;
     height: 10vw;
     border-style: solid;
     border-color: black;
-    border-width: thick;
+    border-width: medium;
+    border-radius: 20%;
+}
+
+.appicn {
+    width: 10vw;
+    height: 10vw;
+    border-style: none;
 }
