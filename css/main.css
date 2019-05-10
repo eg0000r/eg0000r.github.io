@@ -8,11 +8,26 @@
     src: url("../ttf/Comic Sans MS Bold.ttf");
 }
 
+@font-face {
+    font-family: bullpen3d;
+    src: url("../ttf/bullpen 3d.ttf");
+}
+
+@font-face {
+    font-family: bullpen;
+    src: url("../ttf/bullpen hv.ttf");
+}
+
+@font-face {
+    font-family: bullpenIt;
+    src: url("../ttf/bullpen hv it.ttf");
+}
+
 body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: lightskyblue;
+    background-color: azure;
 }
 
 table {
@@ -21,23 +36,23 @@ table {
 }
 
 h1 {
-    font-family: comicSansBold, sans-serif;
+    font-family: bullpenIt, sans-serif;
 }
 
 .menu-button {
+    cursor: pointer;
     background-color: lightskyblue;
-    font-family: comicSans, sans-serif;
+    font-family: bullpen3d, sans-serif;
     font-size: x-large;
     height: 50px;
     width: 20vw;
-    border: none;
+    border-color: black;
+    border-width: thin;
+    border-style: dotted;
     outline: none;
-}
-
-div {
-    background-color: aliceblue;
 }
 
 a {
     color: black;
+    text-decoration: none;
 }
