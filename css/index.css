@@ -121,3 +121,11 @@ h3 {
     border-color: transparent;
     border-width: 0;
 }
+
+.instaprof {
+    border: none;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
