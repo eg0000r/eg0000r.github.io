@@ -274,7 +274,7 @@ h3 {
         background-color: transparent;
         font-family: bullpen3d, sans-serif;
         font-size: 2vw;
-        height: 5vw;
+        height: 10vw;
         width: 20vw;
         border-color: black;
         border-width: thin;
@@ -291,8 +291,8 @@ h3 {
         cursor: pointer;
         background-color: gainsboro;
         font-family: bullpen3d, sans-serif;
-        font-size: 5vw;
-        height: 3vw;
+        font-size: 2vw;
+        height: 10vw;
         width: 20vw;
         border-color: black;
         border-width: thin;
