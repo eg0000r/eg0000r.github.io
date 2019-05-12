@@ -273,13 +273,66 @@ h3 {
         cursor: pointer;
         background-color: transparent;
         font-family: bullpen3d, sans-serif;
-        font-size: 7vw;
+        font-size: 5vw;
+        text-overflow: ellipsis;
         height: 10vw;
         width: 20vw;
         border-color: black;
         border-width: thin;
         border-style: dotted;
         outline: none;
+        opacity: 1;
+        -webkit-transition: all 0.3s ease;;
+        -moz-transition: all 0.3s ease;;
+        -o-transition: all 0.3s ease;;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .menu-button-selected {
+        cursor: pointer;
+        background-color: gainsboro;
+        font-family: bullpen3d, sans-serif;
+        font-size: 5vw;
+        text-overflow: ellipsis;
+        height: 10vw;
+        width: 20vw;
+        border-color: black;
+        border-width: thin;
+        border-style: dotted;
+        outline: none;
+        opacity: 1;
+        -webkit-transition: all 0.3s ease;;
+        -moz-transition: all 0.3s ease;;
+        -o-transition: all 0.3s ease;;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .appicn-borderless-small {
+        width: 10vw;
+        height: 10vw;
+        border-style: none;
+        border-color: transparent;
+        border-width: 0;
+        opacity: 1;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;;
+        -moz-transition: all 0.3s ease;;
+        -o-transition: all 0.3s ease;;
+        transition: all 0.3s ease;
+    }
+
+    .appicnmob-small {
+        width: 10vw;
+        height: 10vw;
+        border-style: solid;
+        border-color: black;
+        border-width: 0.2vw;
+        border-radius: 20%;
+        cursor: pointer;
         opacity: 1;
         -webkit-transition: all 0.3s ease;;
         -moz-transition: all 0.3s ease;;
@@ -287,21 +340,43 @@ h3 {
         transition: all 0.3s ease;
     }
 
-    .menu-button-selected {
-        cursor: pointer;
-        background-color: gainsboro;
-        font-family: bullpen3d, sans-serif;
-        font-size: 7vw;
+    .appicn-small {
+        width: 10vw;
         height: 10vw;
-        width: 20vw;
+        border-style: solid;
         border-color: black;
-        border-width: thin;
-        border-style: dotted;
-        outline: none;
+        border-width: 0.2vw;
+        border-radius: 50%;
         opacity: 1;
+        cursor: pointer;
         -webkit-transition: all 0.3s ease;;
         -moz-transition: all 0.3s ease;;
         -o-transition: all 0.3s ease;;
         transition: all 0.3s ease;
+    }
+
+    h2 {
+        font-family: bullpenIt, sans-serif;
+        font-size: 5vw;
+        cursor: default;
+    }
+
+    h3 {
+        text-align: left;
+        font-family: consolasBldIt, sans-serif;
+        font-size: 4vw;
+        cursor: default;
+    }
+
+    .news-text {
+        font-family: consolasIt, sans-serif;
+        font-size: 3vw;
+        cursor: default;
+    }
+
+    .news-text-bold {
+        font-family: consolasBldIt, sans-serif;
+        font-size: 3vw;
+        cursor: default;
     }
 }
