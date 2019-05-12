@@ -265,7 +265,6 @@ h3 {
 }
 
 .td-to-top {
-
 }
 
 .download-link {
@@ -276,6 +275,30 @@ h3 {
     -moz-transition: all 0.3s ease;;
     -o-transition: all 0.3s ease;;
     transition: all 0.3s ease;
+}
+
+.button-back:hover {
+    opacity: 0.6;
+}
+
+.button-back {
+    border-style: none;
+    font-family: consolasBldIt, sans-serif;
+    font-size: 1vw;
+    background-color: gainsboro;
+    width: 5vw;
+    height: 2vw;
+    border-radius: 1vw;
+    outline-style: none;
+    cursor: pointer;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 600px){
