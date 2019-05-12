@@ -265,6 +265,7 @@ h3 {
 }
 
 .td-to-top {
+    vertical-align: top;
 }
 
 .download-link {
