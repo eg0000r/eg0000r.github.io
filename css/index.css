@@ -267,3 +267,41 @@ h3 {
 .td-to-top {
 
 }
+
+@media screen and (max-width: 481px){
+    .menu-button {
+        cursor: pointer;
+        background-color: transparent;
+        font-family: bullpen3d, sans-serif;
+        font-size: 2vw;
+        height: 5vw;
+        width: 20vw;
+        border-color: black;
+        border-width: thin;
+        border-style: dotted;
+        outline: none;
+        opacity: 1;
+        -webkit-transition: all 0.3s ease;;
+        -moz-transition: all 0.3s ease;;
+        -o-transition: all 0.3s ease;;
+        transition: all 0.3s ease;
+    }
+
+    .menu-button-selected {
+        cursor: pointer;
+        background-color: gainsboro;
+        font-family: bullpen3d, sans-serif;
+        font-size: 5vw;
+        height: 3vw;
+        width: 20vw;
+        border-color: black;
+        border-width: thin;
+        border-style: dotted;
+        outline: none;
+        opacity: 1;
+        -webkit-transition: all 0.3s ease;;
+        -moz-transition: all 0.3s ease;;
+        -o-transition: all 0.3s ease;;
+        transition: all 0.3s ease;
+    }
+}
