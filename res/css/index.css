@@ -28,11 +28,6 @@
     src: url("../ttf/Consolas Bold Italic.ttf");
 }
 
-@font-face {
-    font-family: appleColorEmoji;
-    src: url("https://s3.eu-central-1.amazonaws.com/eg0000r/Apple+Color+Emoji.ttc");
-}
-
 body {
     align-items: center;
     justify-content: center;
@@ -305,6 +300,21 @@ h3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.h1-spin {
+    font-size: 5vw;
+    animation: h1-spin-animation infinite 5s linear;
+    pointer-events: none;
+}
+
+@keyframes h1-spin-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (max-width: 600px){
