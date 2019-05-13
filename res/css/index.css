@@ -28,6 +28,11 @@
     src: url("../ttf/Consolas Bold Italic.ttf");
 }
 
+@font-face {
+    font-family: appleColorEmoji;
+    src: url("https://s3.eu-central-1.amazonaws.com/eg0000r/Apple+Color+Emoji.ttc");
+}
+
 body {
     align-items: center;
     justify-content: center;
@@ -303,6 +308,26 @@ h3 {
 }
 
 @media screen and (max-width: 600px){
+    .button-back {
+        border-style: none;
+        font-family: consolasBldIt, sans-serif;
+        font-size: 2vw;
+        background-color: gainsboro;
+        width: 10vw;
+        height: 4vw;
+        border-radius: 2vw;
+        outline-style: none;
+        cursor: pointer;
+        opacity: 1;
+        -webkit-transition: all 0.3s ease;;
+        -moz-transition: all 0.3s ease;;
+        -o-transition: all 0.3s ease;;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     .menu-button {
         cursor: pointer;
         background-color: transparent;
