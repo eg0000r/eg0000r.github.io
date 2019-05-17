@@ -453,4 +453,11 @@ h3 {
     .decrypt-screen {
         width: 80vw;
     }
+
+    .h3center {
+        text-align: center;
+        font-family: consolasIt, sans-serif;
+        font-size: 3vw;
+        cursor: default;
+    }
 }
