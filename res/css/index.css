@@ -129,7 +129,8 @@ h3 {
 
 .h3center {
     text-align: center;
-    font-family: consolasBldIt, sans-serif;
+    font-family: consolasIt, sans-serif;
+    font-size: 1.25vw;
     cursor: default;
 }
 
@@ -432,7 +433,7 @@ h3 {
 
     h3 {
         text-align: left;
-        font-family: consolasBldIt, sans-serif;
+        font-family: consolasIt, sans-serif;
         font-size: 4vw;
         cursor: default;
     }
